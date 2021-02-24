@@ -2,10 +2,10 @@ import React from 'react'
 
 import { FooterContainer, Button } from '../../styled'
 
-export default function Footer() {
+export default function Footer({ generateChart }) {
   return (
     <FooterContainer>
-      <Button>GENERATE CHART</Button>
+      <Button onClick={generateChart}>GENERATE CHART</Button>
     </FooterContainer>
   )
 }
